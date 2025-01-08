@@ -1,0 +1,75 @@
+
+@font-face {
+    font-family: "Gilroy-bold";
+    src: url(gilroy-bold.woff2) format('woff2'); }
+
+@font-face {
+    font-family: "Gilroy-black";
+    src: url(gilroy-extra-bold.woff2) format('woff2'); }
+
+@font-face {
+    font-family: "Gilroy";
+    src: url(gilroy-regular.woff2) format('woff2'); }
+
+@font-face {
+    font-family: "Gilroy-italic";
+    src: url(gilroy-regular-italic.woff2) format('woff2'); }
+
+
+#subtexttitel {
+    padding-bottom: 80px;}  
+
+.color-one {
+    background-color: #E8E6DF; 
+    border: solid black; }
+
+.color-two {
+    background-color: #7F4BBA;
+    border: solid black; }
+
+.color-three {
+    background-color: #008273;
+    border: solid black; }
+
+.color-four {
+    background-color: #D92B4D;
+    border: solid black; }
+
+.color-five {
+    background-color: #416AD9;
+    border: solid black; }
+
+/* mobile */
+
+.h1 {
+    font-family: "Gilroy-black"; 
+    font-size: 40px;
+    line-height: 110%;
+    letter-spacing: 0%; }
+
+.h2 {
+    font-family: "Gilroy-black"; 
+    font-size: 34px;
+    line-height: 110%;
+    letter-spacing: 0%; }
+
+.h3 {
+    font-family: "Gilroy-bold";
+    font-size: 20px;
+    line-height: 110%; 
+    letter-spacing: 0%; }
+
+.paragraph {
+    font-family: "Gilroy-regular";
+    font-size: 16px;
+    line-height: 160%; }
+
+.sub-text {
+    font-family: "Gillroy-regular";
+    font-size: 18px;
+    line-height: 160%; }
+
+.unordered-list-links {
+    font-family: "Gillroy-bold";
+    font-size: 15px;
+    line-height: 110%; }
