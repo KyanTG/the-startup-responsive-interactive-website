@@ -1,20 +1,19 @@
-body {}
 
 @font-face {
     font-family: "Gilroy-bold";
-    src: url(gilroy-bold.eot); }
+    src: url(gilroy-bold.woff2) format('woff2'); }
 
 @font-face {
     font-family: "Gilroy-black";
-    src: url(gilroy-extra-bold.eot); }
+    src: url(gilroy-extra-bold.woff2) format('woff2'); }
 
 @font-face {
     font-family: "Gilroy";
-    src: url(gilroy-regular.eot); }
+    src: url(gilroy-regular.woff2) format('woff2'); }
 
 @font-face {
     font-family: "Gilroy-italic";
-    src: url(gilroy-regular-italic.eot); }
+    src: url(gilroy-regular-italic.woff2) format('woff2'); }
 
 
 #subtexttitel {
