@@ -1,19 +1,19 @@
 
 @font-face {
     font-family: "Gilroy-bold";
-    src: url(gilroy-bold.woff2) format('woff2'); }
+    src: url(./fonts/gilroy-bold.woff2) format('woff2'); }
 
 @font-face {
     font-family: "Gilroy-black";
-    src: url(gilroy-extra-bold.woff2) format('woff2'); }
+    src: url(./fonts/gilroy-extra-bold.woff2) format('woff2'); }
 
 @font-face {
     font-family: "Gilroy";
-    src: url(gilroy-regular.woff2) format('woff2'); }
+    src: url(./fonts/gilroy-regular.woff2) format('woff2'); }
 
 @font-face {
     font-family: "Gilroy-italic";
-    src: url(gilroy-regular-italic.woff2) format('woff2'); }
+    src: url(./fonts/gilroy-regular-italic.woff2) format('woff2'); }
 
 
 #subtexttitel {
@@ -60,16 +60,36 @@
     letter-spacing: 0%; }
 
 .paragraph {
-    font-family: "Gilroy-regular";
+    font-family: "Gilroy";
     font-size: 16px;
     line-height: 160%; }
 
-.sub-text {
-    font-family: "Gillroy-regular";
+.paragraph-big {
+    font-family: "Gilroy";
     font-size: 18px;
     line-height: 160%; }
 
-.unordered-list-links {
-    font-family: "Gillroy-bold";
+.links {
+    font-family: "Gilroy-bold";
+    font-size: 17px;
+    line-height: 150%; }
+
+.links-small, .subtext {
+    font-family: "Gilroy-bold";
     font-size: 15px;
     line-height: 110%; }
+
+.datum-text {
+    font-family: "Gilroy";
+    font-size: 14px;
+    line-height: 150%; }
+
+.footer-text {
+    font-family: "Gilroy";
+    font-size: 12px;
+    line-height: 150%; }
+
+.italic-text {
+    font-family: "Gilroy-italic";
+    font-size: 14px;
+    line-height: 28px; }

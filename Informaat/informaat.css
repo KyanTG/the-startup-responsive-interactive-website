@@ -1,0 +1,210 @@
+body {
+
+    margin: 0;
+    width: 100%;
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+    } 
+}
+
+.styled-link-white {
+    padding: 14px;
+    border: solid white 1px;
+    border-radius: 30px;
+    color: white;
+}
+
+.styled-link {
+    padding: 14px;
+    border: solid black 1px;
+    border-radius: 30px;
+    color: black;
+}
+
+ul {
+    list-style: none; 
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    overflow: hidden;
+}
+
+header {
+
+    background-color: #D92B4D;
+    padding: 24px 24px 88px 24px;
+
+    img {
+        width: 140px;
+        height: 40px;
+    }
+    
+    nav {
+        
+        ul {
+            display: none;
+        }
+    }
+
+    h1 { 
+        color: white;
+        margin-bottom: 24px;
+        margin-top: 24px;
+    }
+
+        p {
+            color: white;
+            margin-bottom: 46px;
+        }
+}
+
+.secone {
+
+    padding: 0px 24px 88px 24px;
+
+    h2 {
+        margin-top: 16px;
+    }
+
+    p {
+        margin-top: 8px;
+        margin-bottom: 16px;
+    }
+}
+
+.sectwo {
+
+    padding: 0px 24px 72px 24px;
+
+    h3 {
+        margin-top: 16px;
+        margin-bottom: 8px;
+    }
+
+    p {
+        margin-bottom: 16px;
+    }
+
+    .paragraph-extrapadding {
+
+        margin-bottom: 62px ;
+    }
+}
+
+.secthree {
+
+    padding: 40px 24px 88px 24px;
+    background-color: #416AD9;
+
+    h1 {
+        color: white;
+        margin-top: 42px;
+        margin-bottom: 38px;
+    }
+
+    h3 {
+        margin-top: 16px;
+    }
+
+        p {
+            color: white;
+        }
+
+        a {
+            margin-bottom: 70px;
+        }
+}
+
+.secfour {
+    
+    padding: 56px 24px 76px 24px;
+
+    p {
+        margin-top: 8px;
+        margin-bottom: 27px;
+    }
+}
+
+.secfive {
+
+    padding: 24px 24px 91px 24px;
+
+    h2 {
+        margin-bottom: 24px;
+    }
+
+    .h3-extra-marging {
+        margin-bottom: 48px;
+    }
+
+    .h3-normal {
+        margin-bottom: 25px;
+    }
+
+        .small-text {
+            margin-bottom: 49px;
+        }
+
+        .purple-text { 
+            color: #706A7C;
+            margin-top: 16px;
+            margin-bottom: 8px;
+        }
+}
+
+.secsix {
+
+    padding: 56px 24px 50px 24px;
+    background-color: #008273;
+
+    h2 {
+        color: white;
+        margin-bottom: 16px;
+    }
+
+        p {
+            color: white;
+        }
+
+        .p-link-margin {
+            margin-bottom: 46px;
+        }
+
+        img {
+            margin-top: 24px;
+            margin-bottom: 24px;
+        }
+}
+
+footer {
+
+    padding: 40px 24px 50px 24px;
+
+    .dda-footer {
+        width: 44px;
+        height: 58px;
+    }
+
+    .ux-academy-footer {
+        width: 102px;
+        height: 23px;
+    }
+
+    .sdn-footer {
+        width: 50px;
+        height: 12px;
+    }
+
+    .informaat-footer {
+        width: 111px;
+        height: 32px;
+    }
+
+}
