@@ -65,7 +65,7 @@ header {
         }
 }
 
-.secone {
+.content-section-one {
 
     padding: 0px 24px 88px 24px;
 
@@ -79,7 +79,7 @@ header {
     }
 }
 
-.sectwo {
+.content-section-two {
 
     padding: 0px 24px 72px 24px;
 
@@ -98,7 +98,7 @@ header {
     }
 }
 
-.secthree {
+.content-section-three {
 
     padding: 40px 24px 88px 24px;
     background-color: #416AD9;
@@ -123,7 +123,7 @@ header {
         }
 }
 
-.secfour {
+.content-section-four {
     
     padding: 56px 24px 76px 24px;
 
@@ -133,7 +133,7 @@ header {
     }
 }
 
-.secfive {
+.content-section-five {
 
     padding: 24px 24px 91px 24px;
 
@@ -160,7 +160,7 @@ header {
         }
 }
 
-.secsix {
+.content-section-six {
 
     padding: 56px 24px 50px 24px;
     background-color: #008273;
