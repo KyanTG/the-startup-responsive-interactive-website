@@ -196,6 +196,7 @@ header {
 
     button {
         color: white;
+        cursor: pointer;
         background-color: #190B34;
         border: none;
         border-radius: 10px 0px 0px 0px;
@@ -214,21 +215,29 @@ header {
 
 footer {
 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     padding: 40px 24px 50px 24px;
 
     nav {
         display: flex;
         flex-direction: column;
 
+        ul {
+            padding-left: 0px;
+        }
+
         li {
             margin-bottom: 16px;
         }
     }
 
-    .logosfooter {
+    .logos-footer {
 
         display: flex;
         flex-direction: column;
+        align-items: flex-end;
 
         img {
             margin-bottom: 32px;
@@ -260,13 +269,37 @@ footer {
         }
     }
 
-    .informationfooter {
+    .information-footer {
+
+        .footer-email {
+            text-decoration: underline;
+            margin-top: 24px;
+        }
+    }
+
+    .socials-footer {
+
+        margin-top: 40px;
+
+        a {
+            margin-right: 24px;
+        }
+
+        .socials {
+            width: 24px;
+            height: 24px;
+        }
 
     }
 
-}
+    .informaat-footer {
 
-.socials {
-    width: 24px;
-    height: 24px;
+        grid-column: span 2 ;
+        grid-row: 3/3;
+
+        .informaat-footer-logo {
+            width: 111px;
+            height: 32px;
+        }
+    }
 }
