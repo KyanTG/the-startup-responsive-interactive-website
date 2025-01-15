@@ -9,9 +9,12 @@ body {
     } 
 }
 
+/* algemene styling */
+
 .styled-link-white {
     display: flex;
     align-items: center;
+    width: fit-content;
     gap: 8px;
     padding: 14px;
     border: solid white 1px;
@@ -22,6 +25,7 @@ body {
 .styled-link {
     display: flex;
     align-items: center;
+    width: fit-content;
     gap: 8px;
     padding: 14px;
     border: solid black 1px;
@@ -41,6 +45,8 @@ img {
     width: 100%;
     overflow: hidden;
 }
+
+/* speciafieke styling */
 
 header {
 
@@ -71,7 +77,7 @@ header {
         }
 }
 
-.content-section-one {
+body > section:nth-of-type(1) {
 
     padding: 0px 24px 88px 24px;
 
@@ -85,7 +91,7 @@ header {
     }
 }
 
-.content-section-two {
+body > section:nth-of-type(2) {
 
     padding: 0px 24px 72px 24px;
 
@@ -104,7 +110,7 @@ header {
     }
 }
 
-.content-section-three {
+body > section:nth-of-type(3) {
 
     padding: 40px 24px 88px 24px;
     background-color: #416AD9;
@@ -115,7 +121,7 @@ header {
         margin-bottom: 38px;
     }
 
-    h3 {
+    .h3 {
         margin-top: 16px;
         color: white;
     }
@@ -129,7 +135,7 @@ header {
         }
 }
 
-.content-section-four {
+body > section:nth-of-type(4) {
     
     padding: 56px 24px 76px 24px;
 
@@ -139,7 +145,7 @@ header {
     }
 }
 
-.content-section-five {
+body > section:nth-of-type(5) {
 
     padding: 24px 24px 91px 24px;
 
@@ -166,7 +172,7 @@ header {
         }
 }
 
-.content-section-six {
+body > section:nth-of-type(6) {
 
     padding: 56px 24px 50px 24px;
     background-color: #008273;
@@ -190,8 +196,10 @@ header {
         }
 }
 
-.content-section-seven {
+body > section:nth-of-type(7) {
 
+    display: flex;
+    justify-content: flex-end;   
     background-color: #008273;
 
     button {
@@ -200,7 +208,6 @@ header {
         background-color: #190B34;
         border: none;
         border-radius: 10px 0px 0px 0px;
-        margin-left: 57.2%;
         width: 154px;
         height: 49px;
 /* 
@@ -271,9 +278,12 @@ footer {
 
     .information-footer {
 
-        .footer-email {
+        display: flex;
+        flex-direction: column;
+
+        a {
             text-decoration: underline;
-            margin-top: 24px;
+            margin-top: 12px;
         }
     }
 
