@@ -46,6 +46,20 @@ img {
     overflow: hidden;
 }
 
+@media screen and ( max-width: 380px ) {
+    body > section {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+@media screen and (min-width: 380px ) {
+    body > section {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+
 /* speciafieke styling */
 
 header {
@@ -77,25 +91,53 @@ header {
 
 body > section:nth-of-type(1) {
 
+    display: grid;
+    grid-template-columns: 1fr 96px ;
+    grid-template-rows: 220px 24px 116px 32px 55px 48px;
     background-color: #D92B4D;
-    padding: 24px 24px 88px 24px;
+    padding-top: 24px;
+    padding-bottom: 88px;
+
+    @media  screen and ( min-width: 1024px ) {
+ 
+    }
 
     
     h1 { 
+        grid-row: 1/1;
+        grid-column: span 2;
         color: white;
-        margin-bottom: 24px;
         margin-top: 24px;
     }
 
         p {
+            grid-row: 3/3;
+            grid-column: span 2;
             color: white;
-            margin-bottom: 46px;
+        }
+
+        a {
+            grid-row: 5/5;
+            grid-column: 1/1;
+        }
+
+        button {
+            grid-row: 6/6;
+            grid-column: 2/2;
+            height: 96px;
+            width: 96px;
+            background: none;
+            border: none;
+        }
+
+        .img-nodisplay {
+            display: none;
         }
 }
 
 body > section:nth-of-type(2) {
 
-    padding: 0px 24px 88px 24px;
+    padding-bottom: 88px;
 
     h2 {
         margin-top: 16px;
@@ -109,7 +151,7 @@ body > section:nth-of-type(2) {
 
 body > section:nth-of-type(3) {
 
-    padding: 0px 24px 72px 24px;
+    padding-bottom: 72px;
 
     h3 {
         margin-top: 16px;
@@ -128,7 +170,8 @@ body > section:nth-of-type(3) {
 
 body > section:nth-of-type(4) {
 
-    padding: 40px 24px 88px 24px;
+    padding-top: 40px;
+    padding-bottom: 88px;
     background-color: #416AD9;
 
     .h1 {
@@ -149,7 +192,8 @@ body > section:nth-of-type(4) {
 
 body > section:nth-of-type(5) {
     
-    padding: 56px 24px 76px 24px;
+    padding-top: 56px;
+    padding-bottom: 76px;
 
     p {
         margin-top: 8px;
@@ -159,7 +203,8 @@ body > section:nth-of-type(5) {
 
 body > section:nth-of-type(6) {
 
-    padding: 24px 24px 91px 24px;
+    padding-top: 24px;
+    padding-bottom: 91px;
 
     h2 {
         margin-bottom: 24px;
@@ -210,7 +255,8 @@ body > section:nth-of-type(6) {
 
 body > section:nth-of-type(7) {
 
-    padding: 56px 24px 50px 24px;
+    padding-top: 56px;
+    padding-bottom: 50px;
     background-color: #008273;
 
     h2 {
@@ -341,11 +387,10 @@ footer {
     grid-column: span 2 ;
     grid-row: 3/3;
 
-    .informaat-information {
 
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .informaat-information {
+        display: grid;
+        grid-template-columns: 110px 170px;
         gap: 26px;
         margin-bottom: 24px;
 
