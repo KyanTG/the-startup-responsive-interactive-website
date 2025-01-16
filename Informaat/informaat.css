@@ -79,31 +79,37 @@ body > section:nth-of-type(1) {
     padding-bottom: 88px;
 
     @media ( min-width: 1024px ) {
-
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 140px 32px 70px 32px 55px 330px 96px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 140px 32px 70px 32px 55px 330px 96px;
     } 
     
     
     h1 { 
+        grid-column: span 2;
         max-width: 857px;
         grid-row: 1/1;
-        grid-column: span 2;
+
         color: white;
         margin-top: 24px;
 
         @media ( min-width: 1024px ) {
             grid-row: 1/1;
-            grid-column: span 3;
+            grid-column: span 4;
         }
     }
 
         p {
+            grid-column: span 2;
             max-width: 857px;
             grid-row: 3/3;
-            grid-column: span 2;
             color: white;
+
+            @media (min-width: 1024px ) {
+                grid-row: 3/3;
+                grid-column: span 3;
+
+            }
         }
 
         a {
@@ -135,7 +141,7 @@ body > section:nth-of-type(1) {
                 @media ( min-width: 1024px) {
 
                     min-width: 676px;
-                    min-width: 496px;
+                    min-height: 496px;
                     grid-row: 5/6;
                     grid-column: 5/7;
                 }
@@ -147,6 +153,15 @@ body > section:nth-of-type(2) {
 
     padding-bottom: 88px;
 
+    @media ( min-width: 1024px ) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 16px;
+        grid-template-rows: 1fr 26px;
+        padding-top: 72px;
+
+    }
+
     h2 {
         margin-top: 16px;
     }
@@ -154,6 +169,12 @@ body > section:nth-of-type(2) {
     p {
         margin-top: 8px;
         margin-bottom: 16px;
+    }
+
+    a {
+        @media ( min-width: 1024px ) {
+            grid-column: 2/2;
+        }
     }
 }
 
