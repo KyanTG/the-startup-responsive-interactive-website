@@ -11,27 +11,6 @@ body {
 
 /* algemene styling */
 
-.styled-link-white {
-    display: flex;
-    align-items: center;
-    width: fit-content;
-    gap: 8px;
-    padding: 14px 24px 14px 24px;
-    border: solid white 2px;
-    border-radius: 30px;
-    color: white;
-}
-
-.styled-link {
-    display: flex;
-    align-items: center;
-    width: fit-content;
-    gap: 8px;
-    padding: 14px 24px 14px 24px;
-    border: solid black 2px;
-    border-radius: 30px;
-    color: black;
-}
 
 ul {
     list-style: none; 
@@ -89,28 +68,39 @@ header {
     }
 }
 
+
 body > section:nth-of-type(1) {
 
     display: grid;
     grid-template-columns: 1fr 96px ;
-    grid-template-rows: 220px 24px 116px 32px 55px 48px;
+    grid-template-rows: 220px 24px 116px 32px 55px 96px;
     background-color: #D92B4D;
     padding-top: 24px;
     padding-bottom: 88px;
 
-    @media  screen and ( min-width: 1024px ) {
- 
-    }
+    @media ( min-width: 1024px ) {
 
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 140px 32px 70px 32px 55px 330px 96px;
+    } 
+    
     
     h1 { 
+        max-width: 857px;
         grid-row: 1/1;
         grid-column: span 2;
         color: white;
         margin-top: 24px;
+
+        @media ( min-width: 1024px ) {
+            grid-row: 1/1;
+            grid-column: span 3;
+        }
     }
 
         p {
+            max-width: 857px;
             grid-row: 3/3;
             grid-column: span 2;
             color: white;
@@ -128,12 +118,30 @@ body > section:nth-of-type(1) {
             width: 96px;
             background: none;
             border: none;
+
+            @media ( min-width: 1024px ) {
+                grid-row: 7/7;
+                grid-column: 1/1;
+            }
+        }
+            
+            .img-nodisplay {
+
+                @media ( max-width: 1024px) {
+
+                    display: none;
+                }
+
+                @media ( min-width: 1024px) {
+
+                    min-width: 676px;
+                    min-width: 496px;
+                    grid-row: 5/6;
+                    grid-column: 5/7;
+                }
+            }
         }
 
-        .img-nodisplay {
-            display: none;
-        }
-}
 
 body > section:nth-of-type(2) {
 
@@ -386,7 +394,6 @@ footer {
 
     grid-column: span 2 ;
     grid-row: 3/3;
-
 
     .informaat-information {
         display: grid;
