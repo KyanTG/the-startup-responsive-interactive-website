@@ -34,8 +34,8 @@ img {
 
 @media screen and (min-width: 380px ) {
     body > section {
-        padding-left: 24px;
-        padding-right: 24px;
+        padding-left: 7%;
+        padding-right: 7%;
     }
 }
 
@@ -88,13 +88,10 @@ body > section:nth-of-type(1) {
     h1 { 
         grid-column: span 2;
         max-width: 857px;
-        grid-row: 1/1;
-
         color: white;
         margin-top: 24px;
 
         @media ( min-width: 1024px ) {
-            grid-row: 1/1;
             grid-column: span 4;
         }
     }
@@ -107,14 +104,13 @@ body > section:nth-of-type(1) {
 
             @media (min-width: 1024px ) {
                 grid-row: 3/3;
-                grid-column: span 3;
-
+                grid-column: span 4;
             }
         }
 
         a {
             grid-row: 5/5;
-            grid-column: 1/1;
+            grid-column: span 2;
         }
 
         button {
@@ -132,14 +128,10 @@ body > section:nth-of-type(1) {
         }
             
             .img-nodisplay {
+                display: none;
 
-                @media ( max-width: 1024px) {
-
-                    display: none;
-                }
-
-                @media ( min-width: 1024px) {
-
+                @media ( min-width: 1024px ) {
+                    display: grid;
                     min-width: 676px;
                     min-height: 496px;
                     grid-row: 5/6;
@@ -157,6 +149,7 @@ body > section:nth-of-type(2) {
         display: grid;
         grid-template-columns: 1fr 1fr;
         row-gap: 16px;
+        column-gap: 56px;
         grid-template-rows: 1fr 26px;
         padding-top: 72px;
 
@@ -181,6 +174,27 @@ body > section:nth-of-type(2) {
 body > section:nth-of-type(3) {
 
     padding-bottom: 72px;
+
+    @media ( min-width: 1024px ) {
+        display: grid;
+        grid-template-rows: 1fr 408px 55px;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 40px;
+        column-gap: 40px;
+    }
+
+    article:nth-of-type(1) {
+
+        @media ( min-width: 1024px ) {
+            grid-column: span 2;
+        }
+    }
+
+    img {
+        object-fit: cover;
+        max-height: 648px;
+        max-width: 1152px;
+    }
 
     h3 {
         margin-top: 16px;
