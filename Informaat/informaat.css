@@ -16,8 +16,8 @@ body {
     align-items: center;
     width: fit-content;
     gap: 8px;
-    padding: 14px;
-    border: solid white 1px;
+    padding: 14px 24px 14px 24px;
+    border: solid white 2px;
     border-radius: 30px;
     color: white;
 }
@@ -27,8 +27,8 @@ body {
     align-items: center;
     width: fit-content;
     gap: 8px;
-    padding: 14px;
-    border: solid black 1px;
+    padding: 14px 24px 14px 24px;
+    border: solid black 2px;
     border-radius: 30px;
     color: black;
 }
@@ -50,12 +50,21 @@ img {
 
 header {
 
+    display: flex;
+    justify-content: space-between;
     background-color: #D92B4D;
-    padding: 24px 24px 88px 24px;
+    padding: 24px 0px 0px 24px;
 
     .logoheaderwhite {
         width: 140px;
         height: 40px;
+    }
+
+    div {
+        background-color: white;
+        height: 40px;
+        width: 60px;
+        border-radius: 30px 0px 0px 30px;
     }
     
     nav {
@@ -64,7 +73,14 @@ header {
             display: none;
         }
     }
+}
 
+body > section:nth-of-type(1) {
+
+    background-color: #D92B4D;
+    padding: 24px 24px 88px 24px;
+
+    
     h1 { 
         color: white;
         margin-bottom: 24px;
@@ -77,7 +93,7 @@ header {
         }
 }
 
-body > section:nth-of-type(1) {
+body > section:nth-of-type(2) {
 
     padding: 0px 24px 88px 24px;
 
@@ -91,7 +107,7 @@ body > section:nth-of-type(1) {
     }
 }
 
-body > section:nth-of-type(2) {
+body > section:nth-of-type(3) {
 
     padding: 0px 24px 72px 24px;
 
@@ -110,7 +126,7 @@ body > section:nth-of-type(2) {
     }
 }
 
-body > section:nth-of-type(3) {
+body > section:nth-of-type(4) {
 
     padding: 40px 24px 88px 24px;
     background-color: #416AD9;
@@ -129,13 +145,9 @@ body > section:nth-of-type(3) {
         p {
             color: white;
         }
-
-        a {
-            margin-bottom: 70px;
-        }
 }
 
-body > section:nth-of-type(4) {
+body > section:nth-of-type(5) {
     
     padding: 56px 24px 76px 24px;
 
@@ -145,7 +157,7 @@ body > section:nth-of-type(4) {
     }
 }
 
-body > section:nth-of-type(5) {
+body > section:nth-of-type(6) {
 
     padding: 24px 24px 91px 24px;
 
@@ -161,16 +173,17 @@ body > section:nth-of-type(5) {
         margin-bottom: 25px;
     }
 
-    div {
+    .name-block {
         display: grid;
         grid-template-columns: 40px 1fr;
         grid-template-rows: 20px 20px;
         column-gap: 8px;
     }
 
-    div:nth-of-type(1) {
+    .name-block:nth-of-type(1) {
         margin-bottom: 48px;
     }
+
         .circle {
             background-color: #FF335A;
             height: 40px;
@@ -195,7 +208,7 @@ body > section:nth-of-type(5) {
         }
 }
 
-body > section:nth-of-type(6) {
+body > section:nth-of-type(7) {
 
     padding: 56px 24px 50px 24px;
     background-color: #008273;
@@ -219,7 +232,7 @@ body > section:nth-of-type(6) {
         }
 }
 
-body > section:nth-of-type(7) {
+body > section:nth-of-type(8) {
 
     display: flex;
     justify-content: flex-end;   
@@ -312,17 +325,15 @@ footer {
 
     .socials-footer {
 
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
         margin-top: 40px;
-
-        a {
-            margin-right: 24px;
-        }
 
         .socials {
             width: 24px;
             height: 24px;
         }
-
     }
 }
 .informaat-footer {
