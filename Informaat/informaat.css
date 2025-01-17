@@ -25,17 +25,12 @@ img {
     overflow: hidden;
 }
 
-@media screen and ( max-width: 380px ) {
-    body > section {
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-}
 
-@media screen and (min-width: 380px ) {
-    body > section {
-        padding-left: 7%;
-        padding-right: 7%;
+body > section {
+    padding: 0 6.6vw;
+
+    @media ( min-width: 1024px) {
+        padding: 0 4vw;
     }
 }
 
@@ -71,19 +66,18 @@ header {
 
 body > section:nth-of-type(1) {
 
-    display: grid;
-    grid-template-columns: 1fr 96px ;
-    grid-template-rows: 220px 24px 116px 32px 55px 96px;
+    display:flex;
+    flex-direction: column;
+    position: relative;
     background-color: #D92B4D;
+    gap: 24px;
     padding-top: 24px;
     padding-bottom: 88px;
 
     @media ( min-width: 1024px ) {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 140px 32px 70px 32px 55px 330px 96px;
-    } 
-    
+        display: flex;
+        
+    }     
     
     h1 { 
         grid-column: span 2;
@@ -92,38 +86,36 @@ body > section:nth-of-type(1) {
         margin-top: 24px;
 
         @media ( min-width: 1024px ) {
-            grid-column: span 4;
+            
         }
     }
 
         p {
-            grid-column: span 2;
             max-width: 857px;
-            grid-row: 3/3;
+            margin-bottom: 8px;
             color: white;
+            text-wrap: balance;
 
             @media (min-width: 1024px ) {
-                grid-row: 3/3;
-                grid-column: span 4;
+                
             }
         }
 
         a {
-            grid-row: 5/5;
-            grid-column: span 2;
+            
         }
 
         button {
-            grid-row: 6/6;
-            grid-column: 2/2;
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
             height: 96px;
             width: 96px;
             background: none;
             border: none;
 
             @media ( min-width: 1024px ) {
-                grid-row: 7/7;
-                grid-column: 1/1;
+                left:20px;
             }
         }
             
@@ -131,11 +123,13 @@ body > section:nth-of-type(1) {
                 display: none;
 
                 @media ( min-width: 1024px ) {
-                    display: grid;
-                    min-width: 676px;
-                    min-height: 496px;
-                    grid-row: 5/6;
-                    grid-column: 5/7;
+                    display: block;
+                    position: relative;
+                    aspect-ratio: 1.38;
+                    width: 66%;
+                    margin-top: -3vw;
+                    margin-right: -4vw;
+                    margin-left: auto;
                 }
             }
         }
