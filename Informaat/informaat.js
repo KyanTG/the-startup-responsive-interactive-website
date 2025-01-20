@@ -1,5 +1,5 @@
 
-const BtnScrollTop = document.querySelector('.scrollbutton')
+const BtnScrollTop = document.querySelector('.scroll-button')
 
 BtnScrollTop.addEventListener('click', Scrolltop)
 

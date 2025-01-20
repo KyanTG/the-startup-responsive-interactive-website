@@ -43,7 +43,7 @@ header {
     background-color: #D92B4D;
     padding: 24px 0px 0px 24px;
 
-    .logoheaderwhite {
+    .logo-header-white {
         width: 140px;
         height: 40px;
     }
@@ -75,8 +75,7 @@ body > section:nth-of-type(1) {
     padding-bottom: 88px;
 
     @media ( min-width: 1024px ) {
-        display: flex;
-        
+
     }     
     
     h1 { 
@@ -99,10 +98,6 @@ body > section:nth-of-type(1) {
             @media (min-width: 1024px ) {
                 
             }
-        }
-
-        a {
-            
         }
 
         button {
@@ -147,7 +142,6 @@ body > section:nth-of-type(2) {
         column-gap: 56px;
         grid-template-rows: 1fr 26px;
         padding-top: 72px;
-
     }
 
     h2 {
@@ -201,7 +195,6 @@ body > section:nth-of-type(3) {
     }
 
     .paragraph-extrapadding {
-
         margin-bottom: 62px ;
     }
 }
@@ -212,13 +205,13 @@ body > section:nth-of-type(4) {
     padding-bottom: 88px;
     background-color: #416AD9;
 
-    .h1 {
+    h3 {
         color: white;
         margin-top: 42px;
         margin-bottom: 38px;
     }
 
-    .h3 {
+    h2 {
         margin-top: 16px;
         color: white;
     }
@@ -233,9 +226,38 @@ body > section:nth-of-type(5) {
     padding-top: 56px;
     padding-bottom: 76px;
 
+    @media ( min-width: 1024px ) {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-auto-rows: min-content;
+        padding-top: 120px;
+    }
+
+    img { 
+        display: none;
+
+        @media ( min-width: 1024px ) {
+            display:block;
+            grid-row: 1/4;
+            grid-column: 2/2;
+        }
+    }
+
     p {
         margin-top: 8px;
-        margin-bottom: 27px;
+        margin-bottom: 15px;
+
+        @media ( min-width: 1024px ) {
+            grid-column: 1/1;
+            max-width: 608px;
+            margin: 0px;
+        }
+    }
+
+    a {
+        @media ( min-width: 1024px ) {
+            grid-column: 1/1;
+        }
     }
 }
 
@@ -244,8 +266,25 @@ body > section:nth-of-type(6) {
     padding-top: 24px;
     padding-bottom: 91px;
 
+    @media ( min-width: 1024px ) {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 452px);
+        column-gap: 40px;
+        row-gap: 48px;
+    }
+
     h2 {
         margin-bottom: 24px;
+
+        @media ( min-width: 1024px ) {
+            font-size: 40px;
+            grid-column: span 2;
+        }
+    }
+
+    img {
+        max-height: 254px;
+        max-width: 452px;
     }
 
     .h3-extra-marging {
@@ -284,7 +323,7 @@ body > section:nth-of-type(6) {
             grid-row: 2/2;
         }
 
-        .purple-text { 
+        .article-type-text { 
             color: #706A7C;
             margin-top: 16px;
             margin-bottom: 8px;
@@ -370,29 +409,24 @@ footer {
             margin-bottom: 32px;
         }
 
-        .emerce {
+        img:nth-of-type(1) {
             width: 121px;
             height: 44px;
         }   
 
-        .dda-footer {
+        img:nth-of-type(2) {
             width: 44px;
             height: 58px;
         }
 
-        .ux-academy-footer {
+        img:nth-of-type(3) {
             width: 102px;
             height: 23px;
         }
 
-        .sdn-footer {
+        img:nth-of-type(4) {
             width: 50px;
             height: 12px;
-        }
-
-        .informaat-footer {
-            width: 111px;
-            height: 32px;
         }
     }
 
@@ -419,22 +453,23 @@ footer {
             height: 24px;
         }
     }
-}
 
-.informaat-footer {
 
-    grid-column: span 2 ;
-    grid-row: 3/3;
-
-    .informaat-information {
-        display: grid;
-        grid-template-columns: 110px 170px;
-        gap: 26px;
-        margin-bottom: 24px;
-
-        .informaat-footer-logo {
-            width: 111px;
-            height: 32px;
+    .informaat-footer {
+    
+        grid-column: span 2 ;
+        grid-row: 3/3;
+    
+        .informaat-information {
+            display: grid;
+            grid-template-columns: 110px 170px;
+            gap: 26px;
+            margin-bottom: 24px;
+        
+            .informaat-footer-logo {
+                width: 111px;
+                height: 32px;
+            }
         }
     }
 }
