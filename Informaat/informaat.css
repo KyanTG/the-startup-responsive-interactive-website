@@ -283,8 +283,13 @@ body > section:nth-of-type(6) {
     }
 
     img {
-        max-height: 254px;
-        max-width: 452px;
+        max-height: 500px;
+        object-fit: cover;
+        
+        @media ( min-width: 1024px ) {
+            max-height: 254px;
+            max-width: 452px;
+        }
     }
 
     .h3-extra-marging {
@@ -456,16 +461,16 @@ footer {
 
 
     .informaat-footer {
-    
+
         grid-column: span 2 ;
         grid-row: 3/3;
-    
+
         .informaat-information {
             display: grid;
             grid-template-columns: 110px 170px;
             gap: 26px;
             margin-bottom: 24px;
-        
+
             .informaat-footer-logo {
                 width: 111px;
                 height: 32px;
