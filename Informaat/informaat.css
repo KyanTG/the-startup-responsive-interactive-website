@@ -213,7 +213,7 @@ body > section:nth-of-type(1) {
 
         a {
             @media ( min-width: 1305px ) {
-                margin-bottom: 120px;
+                margin-bottom: 15%;
             }
         }
 
