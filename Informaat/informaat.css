@@ -82,6 +82,8 @@ header {
         z-index: 10;
 
         @media ( min-width: 1305px ) {
+            position: fixed;
+            margin-left: 40%;
             margin-top: 72px;
             width: 60%;
             height: 60px;
