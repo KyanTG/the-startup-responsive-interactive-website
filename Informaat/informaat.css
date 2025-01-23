@@ -504,6 +504,7 @@ body > section:nth-of-type(6) {
     @media ( min-width: 1024px ) {
         display: grid;
         grid-template-columns: repeat(2, 452px);
+        justify-content: center;
         column-gap: 40px;
         row-gap: 48px;
         padding-top: 40px;
@@ -511,10 +512,13 @@ body > section:nth-of-type(6) {
     }
 
     @media ( min-width: 1024px ) {
-        justify-content: center;
-        grid-template-columns: repeat(2, 556px);
+        grid-template-columns: repeat(2, 452px);
         padding-top: 56px;
         padding-bottom: 120px;
+    }
+
+    @media ( min-width: 1305px ) {
+        grid-template-columns: repeat(2, 556px);
     }
 
     h2 {
