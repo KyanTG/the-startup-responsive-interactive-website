@@ -668,8 +668,8 @@ body > section:nth-of-type(8) {
     background-color: #008273;
     padding-right: 0;
 
-    @media ( min-width: 1024px) {
-        padding: 0 4vw;
+    @media ( min-width: 1305px ) {
+        padding-inline: 15vw;    
     }
 
     @media ( min-width: 1305px ) {
@@ -685,12 +685,6 @@ body > section:nth-of-type(8) {
         border-radius: 10px 0px 0px 0px;
         width: 154px;
         height: 49px;
-/* 
-        img:hover {
-
-
-
-        } */
     }
 }
 
