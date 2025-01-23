@@ -1,4 +1,5 @@
 
+// Hamburger menu function for the sliding of the nav 
 
 const openButton = document.querySelector(".hamburger");
 
@@ -14,6 +15,8 @@ function openMenu() {
 
 const sluitButton = document.querySelector(".hamburger-open");
 
+
+// scrollbutton for going to the top of the page
 
 const BtnScrollTop = document.querySelector('.scroll-button')
 
