@@ -6,6 +6,40 @@ De opdracht was om een HTML Template op te zetten van de homepage met herbruikba
 
 De website is een homepage pagina die is gemaakt doormiddel van de huisstijl van Informaat. Op de homepage staat vooral informatie voor het navigeren van verschillende subpaginas en de informatie binnen de verschillende subpaginas. Deze subpaginas hebben wij niet gemaakt omdat dit niet de opdracht was. In de website zitten verschillende breakpoints, De website is begonnen met als eerst een mobile first ontwerp ( 360px ) daarna een tussen-size ( 1024px ) en daarna een size voor desktop ( 1305px - 1920px en + ). Vanaf de tussenpagina komt er in de kopsection een nieuw plaatje erbij en ook bij de section over de toekomst, dit omdat dit niet geschikt was voor het mobiele desgin kwa layout.
 
+De volgende code heb ik gebruikt om het voorbeeld hieronder responsive te krijgen
+
+De responsive header
+
+header {
+
+
+    display: flex;
+    justify-content: space-between;
+    background-color: #D92B4D;
+    padding: 24px 0px 0px 24px;
+
+
+    .logo-header-white {
+        width: 140px;
+        height: 40px;
+
+
+        @media ( min-width: 1024px ) {
+            margin-top: 40px;
+            margin-left: 40px;
+        }
+
+
+        @media ( min-width: 1024px ) {
+            margin-left: 56px;;
+            margin-top: 72px;
+            width: 189px;
+            height: 54px;
+        }
+    }
+
+    
+
 ## Responsive & Mobile first
 
 360px
