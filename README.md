@@ -171,7 +171,7 @@ body > section:nth-of-type(1) {
         }
 }
 
-
+Link naar 
     
 
 ## Responsive & Mobile first
@@ -192,9 +192,14 @@ body > section:nth-of-type(1) {
 
 Ik heb ervoor gekozen om het aangeleverde design aan te houden en daarvan ook de aangeleverde breakpoints, dit omdat de breakpoints goed geschikt waren en daardoor het desgin goed in elkaar bleef zitten. voor de button onderaan de pagina ( ga naar boven ) heb ik gekozen om deze smooth te laten scrollen omdat dit een proffesioneler gevoel geeft. Ik heb dit ook laten testen door 3 mensen zodat ik zeker weet dat het goed werkt.
 
+De feedforward zorgt er in dit geval voor dat de gebruiker op de button wilt klikken als deze persoon terug naar boven wilt.
+als feedback krijg de gebruiker een smoothscroll naar het begin van de pagina.
+
 # Kenmerken
 
-HTML: Ik heb ervoor gezorgd dat mijn HTML op Semantische volgorde te schrijven, dit om de website optimaal te laten werken en ervoor te zorgen dat mijn code geen rommel is. Ik heb ook bij elke section een groene benaming gegeven zodat je bepaalde sections snel terug kan zoeken. Ik heb ook bij een section herbruikbare article blocks gemaakt zoals de opdrachtgever gevraagd heeft.
+HTML: Ik heb ervoor gezorgd dat mijn HTML op Semantische volgorde te schrijven met genoeg ademruimte, dit om de website optimaal te laten werken en ervoor te zorgen dat mijn code geen rommel is. Ik heb ook bij elke section een groene benaming gegeven zodat je bepaalde sections snel terug kan zoeken. Ik heb ook bij een section herbruikbare article blocks gemaakt zoals de opdrachtgever gevraagd heeft.
+
+https://github.com/KyanTG/the-startup-responsive-interactive-website/blob/d57e0382843719688fd487a89bed494e45b524b1/Informaat/informaat.html#L95-L125
 
 CSS: In CSS heb ik ervoor gezorgd dat alles op de volgorde van de pagina staat en dat het daarin netjes genest is ( dus bijvoorbeeld in een section een article met daarin een h2. Ik heb bovenaan de pagina de algemene styling bovenaan weergegeven zodat dit makkelijk terug te vinden is. Ik heb ook een stylesheet gemaakt zodat ik niet bij elke tekst nog alle styling hoef toe te passen, maar dit gewoon met classnames kan doen.
 
