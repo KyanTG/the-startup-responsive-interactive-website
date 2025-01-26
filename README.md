@@ -10,33 +10,55 @@ De volgende code heb ik gebruikt om het voorbeeld hieronder responsive te krijge
 
 De responsive header
 
-header {
+    nav {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        translate: 100%;
 
 
-    display: flex;
-    justify-content: space-between;
-    background-color: #D92B4D;
-    padding: 24px 0px 0px 24px;
-
-
-    .logo-header-white {
-        width: 140px;
-        height: 40px;
-
-
-        @media ( min-width: 1024px ) {
-            margin-top: 40px;
-            margin-left: 40px;
+        @media ( min-width: 1305px ) {
+            z-index: 10;
+            translate: unset;
+            margin-left: 40%;
+            margin-top: 110px;
         }
 
 
-        @media ( min-width: 1024px ) {
-            margin-left: 56px;;
-            margin-top: 72px;
-            width: 189px;
-            height: 54px;
+        ul {
+            @media ( min-width: 1305px ) {
+                display: flex;
+                flex-direction: row;
+                gap: 40px;
+            }
         }
+
+
+        li {
+            margin-top: 8px;
+        }
+
+
+            a {
+                @media ( min-width: 1305px ) {
+                    color: black;
+                }
+            }
     }
+
+
+    .nav-open {
+        background-color: white;
+        z-index: 9;
+        top: 0px;
+        padding-top: 100px;
+        translate: 50%;
+        transition: 0.2s; }
+}
 
     
 
