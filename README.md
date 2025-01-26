@@ -37,12 +37,53 @@ als feedback krijg de gebruiker een smoothscroll naar het begin van de pagina.
 
 # Kenmerken
 
-HTML: Ik heb ervoor gezorgd dat mijn HTML op Semantische volgorde te schrijven met genoeg ademruimte, dit om de website optimaal te laten werken en ervoor te zorgen dat mijn code geen rommel is. Ik heb ook bij elke section een groene benaming gegeven zodat je bepaalde sections snel terug kan zoeken. Ik heb ook bij een section herbruikbare article blocks gemaakt zoals de opdrachtgever gevraagd heeft.
+## HTML: 
+
+Ik heb ervoor gezorgd dat mijn HTML op Semantische volgorde te schrijven met genoeg ademruimte, dit om de website optimaal te laten werken en ervoor te zorgen dat mijn code geen rommel is. Ik heb ook bij elke section een groene benaming gegeven zodat je bepaalde sections snel terug kan zoeken. Ik heb ook bij een section herbruikbare article blocks gemaakt zoals de opdrachtgever gevraagd heeft. Ik heb ook geprobeerd om onnodige classnames weg te laten zoals aan sections of articles, mocht er wel classnames gebruikt moeten worden waren deze verplicht in het Engels te doen van de opdrachtgever.
+
+### Voorbeeld semantische code met ademruimte
 
 https://github.com/KyanTG/the-startup-responsive-interactive-website/blob/d57e0382843719688fd487a89bed494e45b524b1/Informaat/informaat.html#L95-L125
 
-CSS: In CSS heb ik ervoor gezorgd dat alles op de volgorde van de pagina staat en dat het daarin netjes genest is ( dus bijvoorbeeld in een section een article met daarin een h2. Ik heb bovenaan de pagina de algemene styling bovenaan weergegeven zodat dit makkelijk terug te vinden is. Ik heb ook een stylesheet gemaakt zodat ik niet bij elke tekst nog alle styling hoef toe te passen, maar dit gewoon met classnames kan doen.
+### Voorbeeld van weinig overbodige classnames 
 
-Javascript: Ik heb dit netjes volgens de javascript regels geschreven door te beginnen met een querySelector met daarna een addEventListener met daarna een Function / classList.
+https://github.com/KyanTG/the-startup-responsive-interactive-website/blob/4392e2d8c97e0d2c9741aa5c67f6b806d87a86ab/Informaat/informaat.html#L64-L78
+
+### Voorbeeld naamgeving
+
+https://github.com/KyanTG/the-startup-responsive-interactive-website/blob/4392e2d8c97e0d2c9741aa5c67f6b806d87a86ab/Informaat/informaat.html#L233-L282
+
+## CSS: 
+
+In CSS heb ik ervoor gezorgd dat alles op de volgorde van de pagina staat zoals het ook in het HTML bestand staat en dat het daarin netjes genest is ( dus bijvoorbeeld in een section een article met daarin een h2 ) . Ik heb bovenaan de pagina de algemene styling weergegeven zodat dit makkelijk terug te vinden is. Ik heb ook een stylesheet gemaakt zodat ik niet bij elke tekst nog alle styling hoef toe te passen, maar dit gewoon met classnames kan doen.
+
+### algemene styling
+
+ik heb voor bepaalde onderdelen algemene styling gegeven zodat het sneller terug te vinden is en er minder code gebruikt hoeft te worden.
+
+https://github.com/KyanTG/the-startup-responsive-interactive-website/blob/7b8c3d34ada655408de72a1de3632affc4d38a46/Informaat/informaat.css#L1-L43
+
+### Styling uit de stylesheet
+
+Ik heb met een stylesheet gewerkt zodat er minder onnodige code in mijn hoofd CSS bestand komt te staan.
+
+https://github.com/KyanTG/the-startup-responsive-interactive-website/blob/4392e2d8c97e0d2c9741aa5c67f6b806d87a86ab/Informaat/styleguide.css#L45-L119
+
+### Nesten van sections & mediaqueries
+
+Ik heb alles netjes genest met de mediaqueries erbij zodat alles makkelijk en snel terug te vinden is. ( ook is dit handig voor eventueel een andere persoon die aan de code werkt! )
+
+https://github.com/KyanTG/the-startup-responsive-interactive-website/blob/4392e2d8c97e0d2c9741aa5c67f6b806d87a86ab/Informaat/informaat.css#L363-L438
+
+
+## JS: 
+
+Ik heb dit netjes volgens de javascript regels geschreven door te beginnen met een querySelector met daarna een addEventListener met daarna een Function / classList. Ik heb ook groene info toegevoegd zodat je weet welke stukken code welke functie uitvoeren!
+
+### Javascript code
+
+https://github.com/KyanTG/the-startup-responsive-interactive-website/blob/4392e2d8c97e0d2c9741aa5c67f6b806d87a86ab/Informaat/informaat.js#L2-L30
+
+
 
 
