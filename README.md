@@ -60,6 +60,118 @@ De responsive header
         transition: 0.2s; }
 }
 
+
+responsive section:nth-of-type(1)
+
+body > section:nth-of-type(1) {
+
+
+    display:flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #D92B4D;
+    gap: 24px;
+    padding-top: 24px;
+    padding-bottom: 88px;
+
+
+    @media ( min-width: 1305px ) {
+        padding-bottom: 350px;
+        padding-right: 0%;
+    }
+
+
+    h1 { 
+        grid-column: span 2;
+        max-width: 857px;
+        color: white;
+        margin-top: 24px;
+
+
+        @media ( min-width: 1024px ) {
+            font-size: 64px;
+        }
+
+
+        @media ( min-width: 1305px ) {
+            font-size: 88px;
+            z-index: 1;
+            margin-bottom: 56px ;
+        }
+    }
+
+
+        p {
+            max-width: 857px;
+            margin-bottom: 8px;
+            color: white;
+            text-wrap: balance;
+
+
+            @media ( min-width: 1024px ) {
+                font-size: 22px;
+            }
+
+
+            @media ( min-width: 1305px ) {
+                font-size: 26px;
+                max-width: 556px;
+            }
+        }
+
+
+        a {
+            @media ( min-width: 1305px ) {
+                margin-bottom: 15%;
+            }
+        }
+
+
+        button {
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            height: 96px;
+            width: 96px;
+            background: none;
+            border: none;
+
+
+            @media ( min-width: 1024px ) {
+                left: 80px;
+                bottom: 80px;
+            }
+
+
+            @media ( min-width: 1305px ) {
+                display: none;
+            }
+        }
+            
+        .img-nodisplay {
+            display: none;
+
+
+            @media ( min-width: 1024px ) {
+                display: block;
+                position: relative;
+                aspect-ratio: 1.38;
+                width: 66%;
+                margin-top: -3vw;
+                margin-right: -4vw;
+                margin-left: auto;
+            }
+
+
+            @media ( min-width: 1305px ) {
+                margin-top: -1020px;
+                margin-right: 0vw;
+                z-index: 0;
+            }
+        }
+}
+
+
     
 
 ## Responsive & Mobile first
